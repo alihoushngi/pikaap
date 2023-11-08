@@ -1,0 +1,171 @@
+.Table_wrapper {
+  padding-top: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  .table {
+    vertical-align: middle;
+    width: 100%;
+    min-width: 800px;
+    border-width: 0 !important;
+    border-color: #2b2b40;
+    border-collapse: collapse !important;
+    .thead {
+      vertical-align: bottom;
+      border-width: 0;
+
+      .thead_row {
+        background-color: #323248 !important;
+        color: #92929f !important;
+        overflow: hidden;
+
+        .thead_cels {
+          overflow: hidden;
+          padding: 1.3rem 1rem;
+        }
+      }
+    }
+    .tbody {
+      .table_body_row {
+        border-bottom: 1px dashed #323248;
+        .table_body_d {
+          font-size: 0.75rem;
+          padding: 0.5rem 0.75rem;
+          vertical-align: middle;
+
+          .tbodyWrapper {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+          }
+        }
+      }
+      .center {
+        text-align: center;
+      }
+      .d-flex {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+      .direction {
+        direction: ltr;
+      }
+    }
+  }
+}
+.user-information-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 2rem;
+  }
+  .name-holder {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 0.75rem;
+      font-weight: 100 !important;
+    }
+    h2 {
+      font-size: 0.65rem;
+      margin-top: 0.5rem;
+      color: #e8e8e866;
+    }
+  }
+}
+.no-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+.subs-holder {
+  display: flex;
+  background-color: #0e172e !important;
+  color: #7239ea !important;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+}
+.coms-holder {
+  display: flex;
+  background-color: #0e172e !important;
+  color: #7239ea !important;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+}
+.is-online {
+  display: flex;
+  background-color: #0e172e !important;
+  color: #50cd89 !important;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4px;
+  width: 100%;
+}
+.is-offline {
+  text-align: center;
+  display: flex;
+  background-color: #0e172e !important;
+  color: #ffc700 !important;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+}
+.success {
+  display: flex;
+  background-color: #0e172e !important;
+  color: #50cd89 !important;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+}
+.failed {
+  display: flex;
+  height: 100%;
+  background-color: #0e172e !important;
+  color: #f1416c !important;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+}
+.loading-container {
+  display: flex;
+  width: 100%;
+}
+
+.amount {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.deposit {
+  text-align: center;
+  display: flex;
+  background-color: #0e2e0e !important;
+  color: #00ff0d !important;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+}
+.withdrawal {
+  text-align: center;
+  display: flex;
+  background-color: #a71e1ea0 !important;
+  color: #d00e0e !important;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+}

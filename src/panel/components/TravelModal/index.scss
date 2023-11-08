@@ -1,0 +1,100 @@
+.Travelmodal {
+	display: flex;
+	justify-content: center;
+
+	.Modal_background {
+		.Table_wrapper {
+			padding: 2rem 1.25rem;
+			.table {
+				vertical-align: middle;
+				width: 50%;
+				border-width: 0 !important;
+				border-color: #2b2b40;
+				border-collapse: collapse !important;
+				.thead {
+					vertical-align: bottom;
+					border-color: inherit;
+					border-style: solid;
+					border-width: 0;
+
+					.thead_row {
+						border-color: inherit;
+						border-width: inherit;
+						border-style: inherit;
+						height: inherit;
+						min-height: inherit;
+						background-color: #323248 !important;
+						color: #92929f !important;
+
+						.Travelthead_cels {
+							padding-top: 1rem;
+							padding-bottom: 1rem;
+							padding-left: 1rem !important;
+
+							&:nth-child(1) {
+								min-width: 200px;
+								border-bottom-right-radius: 0.475rem !important;
+								border-top-right-radius: 0.475rem !important;
+							}
+							&:nth-child(2) {
+								min-width: 150px;
+							}
+							&:nth-child(3) {
+								min-width: 125px;
+							}
+							&:nth-child(4) {
+								min-width: 125px;
+							}
+							&:nth-child(5) {
+								min-width: 125px;
+							}
+							&:nth-child(6) {
+								min-width: 150px;
+							}
+							&:nth-child(7) {
+								min-width: 125px;
+								border-bottom-left-radius: 0.475rem !important;
+								border-top-left-radius: 0.475rem !important;
+							}
+							//   &:nth-child(5) {
+							//     min-width: 100px;
+							//   }
+							//   &:nth-child(6) {
+							//     min-width: 200px;
+							//   }
+						}
+					}
+				}
+			}
+			.tbody {
+				.table_body_row {
+					.table_body_d {
+						.tbodyWrapper {
+							align-items: center;
+							.tbody_imgWrapper {
+								width: unset !important;
+								height: unset !important;
+								img {
+									width: 50px !important;
+									height: 50px !important;
+									border-radius: unset !important;
+								}
+							}
+						}
+						.tbody_fWrapper {
+							display: flex;
+							justify-content: space-evenly;
+							align-items: center;
+						}
+					}
+				}
+				.center {
+					text-align: center;
+				}
+				.direction {
+					direction: ltr;
+				}
+			}
+		}
+	}
+}

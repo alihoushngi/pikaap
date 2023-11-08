@@ -1,0 +1,49 @@
+.aside-search {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 3.25rem !important;
+
+	@media (max-width: 1314px) {
+		padding-top: 1rem !important;
+	}
+
+	.aside-search-container {
+		align-items: stretch !important;
+		display: flex;
+		.btn-search {
+			height: 50px;
+			width: 50px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 500;
+			line-height: 1.5;
+			text-align: center;
+			vertical-align: middle;
+			cursor: pointer;
+			user-select: none;
+			font-size: 1.1rem;
+			transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+				border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+			outline: none !important;
+			padding: 0;
+			color: #ffffff;
+			background-color: #f64e60;
+			border-radius: 50%;
+			&:hover {
+				background-color: #ee2d41 !important;
+			}
+			span {
+				padding: 0;
+				margin: 0;
+				line-height: 1;
+				svg {
+					height: 1.45rem !important;
+					width: 1.45rem !important;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}

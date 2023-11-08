@@ -1,0 +1,70 @@
+@import "~leaflet/dist/leaflet.css";
+@import "./panel/assets/Fonts/fontawesome/css/all.css";
+@import "./panel/themes/animation.scss";
+.row > * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.container {
+  --bs-gutter-x: 0 !important;
+}
+.row {
+  width: 100% !important;
+  --bs-gutter-x: 0 !important;
+}
+.center-all {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.video-background {
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.035;
+}
+.Toastify__toast-container {
+  div {
+    font-family: iranSans !important;
+    white-space: nowrap;
+  }
+}
+
+.HomeScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  .navigateToDashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 2rem 10rem;
+    text-decoration: none;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    background-color: #3699ff;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 0.475rem;
+    left: 0;
+    box-sizing: border-box;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+
+    &:hover {
+      background-color: #187de4 !important;
+    }
+  }
+}
+a {
+  color: unset;
+  text-decoration: none;
+  &:hover {
+    color: unset;
+  }
+}

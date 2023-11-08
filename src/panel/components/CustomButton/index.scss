@@ -1,0 +1,22 @@
+#cb-container {
+  .isDanger {
+    background-color: #ff8888 !important;
+  }
+  .disabled {
+    background-color: red !important;
+  }
+  display: flex;
+  background-color: #3699ff;
+  cursor: pointer;
+  padding: 0.9rem 1rem;
+  border-radius: 0.4rem;
+  .rightIcon {
+    margin: 0 1rem;
+  }
+  .ic-right {
+    margin-left: 1rem;
+  }
+  .ic-left {
+    margin-right: 1rem;
+  }
+}

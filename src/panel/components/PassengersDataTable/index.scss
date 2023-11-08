@@ -1,0 +1,197 @@
+.passengersinformation {
+	margin-top: 2rem;
+	padding: 2rem;
+	background-color: #1e1e2d;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+	min-width: 80vw;
+	max-width: 80vw;
+	overflow-x: auto;
+	white-space: nowrap;
+
+	.openButton {
+		display: flex;
+		margin-left: 0.5rem;
+		background-color: #323248;
+		padding: 0.5rem;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		border: 0;
+
+		svg {
+			width: 15px;
+			height: 15px;
+			fill: #565674;
+			transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+			@media (max-width: 1398px) {
+				width: 10px;
+				height: 10px;
+			}
+		}
+
+		&:hover {
+			svg {
+				fill: #3699ff;
+			}
+		}
+	}
+
+	.Table_wrapper {
+		padding-top: 1rem;
+		.table {
+			@media (max-width: 1398px) {
+				font-size: 0.5rem !important;
+			}
+			@media (max-width: 928px) {
+				font-size: 0.2rem !important;
+			}
+			@media (max-width: 500px) {
+				font-size: 0.1rem !important;
+			}
+			vertical-align: middle;
+			width: 100%;
+			border-width: 0 !important;
+			border-color: #2b2b40;
+			border-collapse: collapse !important;
+			.thead {
+				vertical-align: bottom;
+				border-color: inherit;
+				border-style: solid;
+				border-width: 0;
+
+				.thead_row {
+					background-color: #323248 !important;
+					color: #92929f !important;
+
+					.thead_cels {
+						padding-top: 1rem;
+						padding-bottom: 1rem;
+					}
+				}
+			}
+			.tbody {
+				.table_body_row {
+					&:not(:last-child) {
+						border-bottom: 1px dashed #323248;
+					}
+					.table_body_d {
+						padding-left: 1rem !important;
+						padding-right: 1rem !important;
+						padding-bottom: 0.2rem;
+						position: unset !important;
+
+						@media (max-width: 1398px) {
+							font-size: 0.7rem;
+						}
+						.tbody_fWrapper {
+							display: flex;
+							justify-content: space-evenly;
+							align-items: center;
+						}
+						.ActiveUser {
+							padding: 0.325rem 0.5rem;
+							font-size: 0.85rem;
+							font-weight: 600;
+							line-height: 1;
+							text-align: center;
+							white-space: nowrap;
+							vertical-align: baseline;
+							border-radius: 0.325rem;
+							color: #0bb783;
+							background-color: #1c3238;
+						}
+						.DeactiveUser {
+							padding: 0.325rem 0.5rem;
+							font-size: 0.85rem;
+							font-weight: 600;
+							line-height: 1;
+							text-align: center;
+							white-space: nowrap;
+							vertical-align: baseline;
+							border-radius: 0.325rem;
+							color: #f64e60;
+							background-color: #3a2434;
+						}
+						.name {
+							text-align: right;
+						}
+						.tbodyWrapper {
+							margin-top: 1rem;
+							justify-content: flex-start;
+							.phoneNumber_row {
+								font-size: 0.9rem;
+								color: #565674;
+								line-height: 30px;
+							}
+							.tbody_imgWrapper {
+								width: 40px;
+								height: 40px;
+								margin-left: 10px;
+								margin-bottom: 10px;
+								img {
+									width: 100%;
+									height: 100%;
+									border-radius: 50%;
+									background-color: rgba($color: #3699ff, $alpha: 0.5);
+								}
+							}
+							.unicode {
+								font-size: 0.9rem;
+								color: #565674;
+								line-height: 30px;
+								@media (max-width: 1398px) {
+									font-size: 0.7rem;
+								}
+							}
+						}
+					}
+				}
+				.center {
+					text-align: center;
+				}
+				.d-flex {
+					display: flex;
+					justify-content: center;
+					margin-top: 1rem;
+				}
+				.direction {
+					direction: ltr;
+				}
+			}
+		}
+	}
+	input[type="checkbox"],
+	[type="radio"] {
+		background-repeat: no-repeat;
+		background-position: center;
+		vertical-align: top;
+		border-radius: 0.45em;
+		margin: 0;
+		float: none;
+		flex-shrink: 0;
+		// -webkit-appearance: none !important;
+		// -moz-appearance: none !important;
+		appearance: none !important;
+		cursor: pointer;
+		border: 0;
+		background-color: #2b2b40;
+		width: 1.2rem !important;
+		height: 1.2rem !important;
+		transition: background-color 0.15s ease-in-out, background-position 0.15s ease-in-out,
+			border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	}
+	input[type="checkbox"]:checked {
+		background-color: #3699ff;
+		background-image: url(../../assets/Images/check.svg);
+
+		background-size: 60% 60%;
+	}
+	input[type="radio"]:checked {
+		background-color: #3699ff;
+		background-image: url(../../assets/Images/check.svg);
+
+		background-size: 60% 60%;
+	}
+}

@@ -1,0 +1,29 @@
+#access-screen-container {
+  display: flex;
+  background-color: #1e1e2d;
+  flex-direction: column;
+  min-width: 70vw;
+  border-radius: 2rem;
+  padding: 2rem;
+  .as-header {
+    display: flex;
+    justify-content: space-between;
+    .add-access {
+      display: flex;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      background-color: #eeeeee;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      color: #1e1e2d;
+    }
+  }
+  .no-access-listed {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+}

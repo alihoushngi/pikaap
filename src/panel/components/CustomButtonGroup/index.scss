@@ -1,0 +1,31 @@
+#custom-button-group-container {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+  }
+  p {
+    padding: 0.8rem 1rem;
+    margin-left: 0.15rem;
+    cursor: pointer;
+
+    &:first-child {
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    &:last-child {
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+    }
+  }
+  .cbg-items-holder {
+    display: flex;
+    margin-top: 0.5rem;
+  }
+  .selected {
+    background-color: #66f !important;
+  }
+}

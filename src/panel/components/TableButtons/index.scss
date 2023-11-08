@@ -1,0 +1,70 @@
+.TbuttonsWrapper {
+	display: flex;
+}
+
+.tButton {
+	display: flex;
+	background-color: #323248;
+	padding: 0.5rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	svg {
+		width: 12px !important;
+		height: 12px !important;
+		fill: #565674;
+		transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+	&:hover {
+		svg {
+			fill: #3699ff;
+		}
+	}
+}
+
+.buttonsWrapper {
+	position: relative;
+	margin-left: 0.5rem;
+	.tooltip.info {
+		left: -100% !important;
+	}
+
+	.tooltip.delete {
+		left: -30% !important;
+	}
+
+	.tooltip {
+		position: absolute;
+		top: -40px;
+		left: -40%;
+		font-size: 14px;
+		color: #6d6d80;
+		background: #ffffff;
+		padding: 12px 8px;
+		border-radius: 5px;
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		white-space: nowrap;
+
+		&::before {
+			position: absolute;
+			content: "";
+			height: 8px;
+			width: 8px;
+			background: #ffffff;
+			bottom: -4px;
+			left: 50%;
+			transform: translate(-50%) rotate(45deg);
+			transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		}
+	}
+}
+
+.buttonsWrapper:hover .tooltip {
+	top: -45px;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}

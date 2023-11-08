@@ -1,0 +1,8 @@
+{
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Poppins, Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.codeLensFontFamily": "",
+  "cSpell.words": ["shamsi"]
+}

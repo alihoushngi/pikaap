@@ -1,0 +1,72 @@
+#portal {
+	width: 100%;
+	.bk-modal {
+		// overflow-y: auto;
+		position: fixed;
+		top: 0%;
+		left: 0%;
+		width: 100%;
+		height: 100%;
+		transition: opacity 200ms linear, transform 300ms linear;
+		z-index: 1000;
+		// animate
+
+		&.active {
+			opacity: 1;
+			// transform: translate(-50%, -50%);
+		}
+		&.hidden {
+			opacity: 0;
+			// transform: translate(-50%, -70%);
+		}
+	}
+	.bk-modal-backdrop {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		z-index: 161616;
+		background-color: rgba($color: #000000, $alpha: 0.5);
+	}
+
+	.bk-modal-wrapper {
+		border-radius: 6px;
+		margin: 0 auto;
+		margin-top: 1rem;
+		max-width: 700px;
+		z-index: 161617;
+		overflow-y: auto;
+		position: fixed;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -40%);
+		width: 100%;
+		z-index: 161617;
+		background-color: #fff;
+		padding: 1rem;
+		.bk-modal-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.bk-close-modal {
+				border: 1px solid black !important;
+				color: black !important;
+				cursor: pointer;
+				border: 1px solid transparent;
+				padding: 5px;
+				border-radius: 5px;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					background-color: red;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.bk-modal-body {
+		overflow-y: auto;
+		max-height: 700px;
+	}
+}

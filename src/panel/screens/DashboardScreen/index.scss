@@ -1,0 +1,128 @@
+#dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .top-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto !important;
+  }
+
+  .map-driver-container {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    .leaflet-container {
+      width: 100%;
+    }
+    .leaflet-control-attribution {
+      display: none;
+    }
+    .icon-marker {
+      width: 24px !important;
+      height: 24px !important;
+    }
+  }
+
+  .box-chart-holder {
+    width: 90%;
+    display: flex;
+  }
+
+  .column-last-sign-up-users {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    .chap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .rast {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .apexcharts-toolbar {
+      display: none;
+    }
+    .apexcharts-yaxis {
+      display: none;
+    }
+    .apexcharts-grid {
+      display: none;
+    }
+  }
+
+  .donut-chart-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .area-chart-container {
+    .apexcharts-toolbar {
+      display: none;
+    }
+    .apexcharts-yaxis {
+      display: none;
+    }
+    .apexcharts-grid {
+      display: none;
+    }
+    .apexcharts-tooltip {
+      display: none;
+    }
+    .apexcharts-xaxis {
+      display: none;
+    }
+    .apexcharts-datalabels {
+      display: none;
+    }
+  }
+  .leaflet-popup {
+    .leaflet-popup-content {
+      #user-information-container {
+        .avatar {
+          width: 12rem;
+          height: 7rem;
+          border-radius: 100%;
+        }
+        .name-holder {
+          h1 {
+            font-size: 1rem;
+            text-align: right;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            color: white;
+            font-family: iranSans;
+          }
+          h2 {
+            font-size: 0.75rem;
+            text-align: right;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            color: gray;
+            font-family: iranSans;
+          }
+        }
+      }
+    }
+
+    .leaflet-popup-content-wrapper {
+      background-color: #161515;
+    }
+    .leaflet-popup-tip {
+      background-color: #151515;
+    }
+  }
+}

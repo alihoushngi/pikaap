@@ -1,0 +1,100 @@
+#custom-drop-down {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  .cdd-input {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    display: flex;
+    label {
+      display: flex;
+      font-size: 0.9rem;
+      font-weight: lighter;
+      margin-right: 0.5rem;
+    }
+    div {
+      margin-top: 0.5rem;
+      background-color: #1b1b29;
+      align-items: center;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      display: flex;
+      span {
+        width: 100%;
+        font-weight: 200;
+        color: #eee;
+      }
+    }
+  }
+
+  .none {
+    transform: scaleY(0) !important;
+  }
+
+  .cdd-body {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: #1b1b29;
+    position: absolute;
+    top: 110%;
+    border-radius: 0.5rem;
+    .cdd-body-search {
+      justify-content: space-between;
+      display: flex;
+
+      input {
+        border: none;
+        background-color: #151521;
+        border-radius: 1rem;
+        padding: 0 1rem;
+        color: #eee;
+      }
+      .cdd-search-base {
+        flex-direction: column;
+        .cdd-search-base-header {
+          display: flex;
+          position: relative;
+          margin: 0 1rem;
+          padding: 1rem;
+          background-color: #151521;
+          span {
+            display: flex;
+            font-size: 0.7rem;
+            white-space: nowrap;
+            width: 100%;
+            i {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+
+        .cdd-search-base-body {
+          position: absolute;
+          transform: scaleY(1);
+          transform-origin: top;
+          transition: all 0.2s;
+          top: 2.5rem;
+          left: 0;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: fit-content;
+          p {
+            font-weight: 200;
+            font-size: 0.7rem;
+            width: fit-content;
+            white-space: nowrap;
+            padding: 0.5rem 0.7rem;
+          }
+        }
+      }
+    }
+  }
+  .cdd-body-data {
+    padding: 0 1rem;
+  }
+}

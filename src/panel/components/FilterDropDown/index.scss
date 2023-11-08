@@ -1,0 +1,133 @@
+.filterDropDown_Wrapper {
+	z-index: 105;
+	position: fixed;
+	inset: 0px 0px auto auto;
+	margin: 0px;
+	border-radius: 0.475rem;
+	background-color: #1e1e2d;
+	box-shadow: 0px 0px 30px rgb(0 0 0 / 30%);
+	padding: 2rem;
+	.DropDownHeader {
+		.DropDownInputs {
+			display: flex;
+			margin-top: 1rem;
+			margin-bottom: 1.5rem;
+			.DropDownInput_wrapper {
+				margin-left: 10px;
+				white-space: nowrap;
+				input {
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+	.DropDownMain {
+		.menu-link.Filter {
+			margin-left: unset !important;
+			.button {
+				padding: 0;
+				background-color: unset !important;
+				border-radius: unset;
+				border: unset;
+				transition: unset;
+				position: relative;
+				display: flex;
+				align-items: center;
+				&:hover {
+					background-color: unset;
+				}
+				.menu-title {
+					input {
+						background-color: #171723;
+						border: 0;
+						color: #565674;
+						transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+							border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+						border-radius: 0.475rem;
+						padding: calc(0.75rem + 1px) calc(1.5rem + 1px);
+						user-select: none;
+						font-family: inherit;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		.DropDownMenu_wrapper {
+			border: 0;
+			box-shadow: 0px 0px 30px rgb(0 0 0 / 30%);
+			border-radius: 0.475rem;
+			background-color: #1e1e2d;
+			position: absolute;
+			width: 100%;
+			li {
+				color: #92929f;
+				transition: color 0.2s ease, background-color 0.2s ease;
+				padding: 0.75rem 1.25rem;
+				margin: 0 0;
+				cursor: pointer;
+				&:hover {
+					background-color: #212e48;
+					color: #3699ff;
+					transition: color 0.2s ease, background-color 0.2s ease;
+				}
+			}
+		}
+	}
+	.DropDownFooter {
+		display: flex;
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+		justify-content: space-evenly;
+		width: 170px;
+		.Filterbutton {
+			width: fit-content;
+		}
+		.Filterbutton.submit {
+			a {
+				width: 100%;
+				justify-content: center;
+				display: flex;
+				padding: 0.5rem;
+				border: 0;
+				color: #ffffff !important;
+				background-color: #3699ff;
+				margin-left: 1rem;
+				font-size: 0.8rem;
+				border-radius: 0.325rem;
+				font-weight: 500;
+				text-align: center;
+				vertical-align: middle;
+				user-select: none;
+				transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+					border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+				&:hover {
+					background-color: #187de4 !important;
+				}
+			}
+		}
+		.Filterbutton.reset {
+			a {
+				width: 100%;
+				justify-content: center;
+				display: flex;
+				padding: 0.5rem;
+				border: 0;
+				color: #cdcdde !important;
+				background-color: #323248;
+				margin-left: 1rem;
+				font-size: 0.8rem;
+				border-radius: 0.325rem;
+				font-weight: 500;
+				text-align: center;
+				vertical-align: middle;
+				user-select: none;
+				transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+					border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+				&:hover {
+					color: #3699ff !important;
+					background-color: #212e48 !important;
+				}
+			}
+		}
+	}
+}

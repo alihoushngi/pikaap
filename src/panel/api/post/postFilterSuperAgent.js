@@ -1,0 +1,15 @@
+import webSiteAxios from "../webSiteAxios";
+import routes from "../routes";
+const postFilterSuperAgent = async ({ searchField, searchValue, body, page }) => {
+	try {
+		const response = await webSiteAxios.post(
+			routes.FilterSuperAgent +
+				`?searchField=${searchField}&searchValue=${searchValue}&page=${page}`,
+			body
+		);
+		return response.data.result;
+	} catch (e) {
+		console.log({ e });
+	}
+};
+export default postFilterSuperAgent;

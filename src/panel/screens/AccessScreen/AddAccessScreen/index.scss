@@ -1,0 +1,35 @@
+#add-access-screen {
+  display: flex;
+  background-color: #1e1e2d;
+  flex-direction: column;
+  min-width: 70vw;
+  border-radius: 2rem;
+  padding: 2rem;
+  h1 {
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 0.5rem;
+  }
+  .choose-role-container {
+    display: flex;
+    margin-top: 0.5rem;
+  }
+  .choose-access-container {
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    h2 {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+      width: 100%;
+    }
+    .choose-access-holder {
+      display: flex;
+      margin-top: 2rem;
+      h3 {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.5rem;
+        width: 25%;
+      }
+    }
+  }
+}

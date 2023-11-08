@@ -1,0 +1,28 @@
+#user-information-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0;
+
+  .avatar {
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .name-holder {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    h1 {
+      font-size: 0.75rem;
+      font-weight: 100 !important;
+    }
+    h2 {
+      font-size: 0.65rem;
+      margin-top: 0.5rem;
+      color: #e8e8e866;
+    }
+  }
+}

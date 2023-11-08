@@ -1,0 +1,11 @@
+#custom-checkBox-1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  label {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+}

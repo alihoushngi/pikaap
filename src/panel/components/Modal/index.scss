@@ -1,0 +1,62 @@
+.modalDialog {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	position: fixed;
+	z-index: 2000;
+	top: 10px;
+	.modalContent {
+		margin-top: 1rem;
+		padding: 1rem;
+		background-color: #1e1e2d;
+		border-radius: 1rem;
+		overflow-x: auto;
+
+		@media (max-width: 1150px) {
+			max-width: 700px;
+		}
+
+		@media (max-width: 900px) {
+			max-width: 500px;
+		}
+		.modalHeader {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.modalTitleWrapper {
+				text-align: right;
+				.desTitile {
+					font-size: 12px;
+					color: #565674;
+				}
+				.modalTitleClass {
+					margin-bottom: 0.2rem;
+				}
+			}
+			.exitButtonClass {
+				display: flex;
+				background-color: #323248;
+				padding: 0.5rem;
+				justify-content: center;
+				align-items: center;
+				border-radius: 5px;
+				border: 0;
+				svg {
+					width: 15px;
+					height: 15px;
+					fill: #565674;
+					transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				}
+				&:hover {
+					svg {
+						fill: #3699ff;
+					}
+				}
+			}
+		}
+
+		.modalBody {
+			max-height: 550px;
+		}
+	}
+}

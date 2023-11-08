@@ -1,0 +1,77 @@
+#custom-search-agent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  input {
+    color: black !important;
+    border: none;
+  }
+  .btn-group {
+    margin-top: 1rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    overflow: hidden;
+    justify-content: space-between;
+    display: flex;
+    &__item {
+      font-family: iranSans !important;
+      border: none;
+      font-size: 0.6rem;
+      padding: 0.5rem 0;
+      width: 19%;
+      color: #9b9b9b;
+      background-color: #171723;
+      cursor: pointer;
+      margin: 0;
+      box-shadow: inset 0px 0px 0px -15px rebeccapurple;
+      transition: all 300ms ease-out;
+      &:hover,
+      &:focus {
+        color: rebeccapurple;
+        box-shadow: inset 0px -20px 0px -15px rebeccapurple;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .selected {
+    box-shadow: inset 0px -20px 0px -15px rebeccapurple;
+  }
+  .option-label {
+    display: flex;
+    width: "100%";
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+    margin-bottom: 2px;
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .option-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      margin-left: 0.5rem;
+    }
+    span {
+      max-width: 10rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0.5rem 0;
+      text-align: right;
+      display: flex;
+      font-size: 0.9rem;
+      color: black;
+    }
+  }
+}

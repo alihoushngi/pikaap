@@ -1,0 +1,162 @@
+{
+  "administrator": {
+    "superAgent": [
+      {
+        "name": "ساخت یک اتحادیه",
+        "route": "/api/v1/administrator/super-agent",
+        "method": "POST"
+      },
+      {
+        "name": "ارتقای کاربر به اتحادیه",
+        "route": "/api/v1/administrator/super-agent",
+        "method": "PATCH"
+      },
+      {
+        "name": "بروزرسانی اتحادیه",
+        "route": "/api/v1/administrator/super-agent",
+        "method": "PUT"
+      },
+      {
+        "name": "دریافت لیست اتحادیه",
+        "route": "/api/v1/administrator/super-agent",
+        "method": "GET"
+      },
+      {
+        "name": "حذف یک اتحادیه",
+        "route": "/api/v1/administrator/super-agent",
+        "method": "DELETE"
+      },
+      {
+        "name": "جستوجو یک اتحادیه",
+        "route": "/api/v1/administrator/super-agent/s",
+        "method": "GET"
+      }
+    ],
+    "agent": [
+      {
+        "name": "ساخت یک آژانس",
+        "route": "/api/v1/administrator/agent",
+        "method": "POST"
+      },
+      {
+        "name": "ارتقای کاربر به آژانس",
+        "route": "/api/v1/administrator/agent",
+        "method": "PATCH"
+      },
+      {
+        "name": "بروزرسانی آژانس",
+        "route": "/api/v1/administrator/agent",
+        "method": "PUT"
+      },
+      {
+        "name": "حذف یک آژانس",
+        "route": "/api/v1/administrator/agent",
+        "method": "DELETE"
+      },
+      {
+        "name": " جستوجو بر اساس نام‌کاربری,کدملی و شماره موبایل ",
+        "route": "/api/v1/administrator/agent/sf",
+        "method": "POST"
+      },
+      {
+        "name": "جستوجو یک آژانس",
+        "route": "/api/v1/administrator/agent/s",
+        "method": "GET"
+      }
+    ],
+    "driver": [],
+    "passenger": [],
+    "financial": [],
+    "block": []
+  },
+  "superAgent": {
+    "agent": [
+      {
+        "name": "ساخت یک آژانس",
+        "route": "/api/v1/super-agent/agent",
+        "method": "POST"
+      },
+      {
+        "name": "ارتقای کاربر به آژانس",
+        "route": "/api/v1/super-agent/agent",
+        "method": "PATCH"
+      },
+      {
+        "name": "بروزرسانی آژانس",
+        "route": "/api/v1/super-agent/agent",
+        "method": "PUT"
+      },
+      {
+        "name": "دریافت لیست آژانس",
+        "route": "/api/v1/super-agent/agent",
+        "method": "GET"
+      },
+      {
+        "name": "حذف یک آژانس",
+        "route": "/api/v1/super-agent/agent",
+        "method": "DELETE"
+      }
+    ],
+    "driver": [
+      {
+        "name": "ساخت یک راننده توسط اتحادیه",
+        "route": "/api/v1/super-agent/driver",
+        "method": "POST"
+      },
+      {
+        "name": "ارتقای کاربر به راننده توسط اتحادیه",
+        "route": "/api/v1/super-agent/driver",
+        "method": "PATCH"
+      },
+      {
+        "name": "بروزرسانی راننده",
+        "route": "/api/v1/super-agent/driver",
+        "method": "PUT"
+      },
+      {
+        "name": "دریافت لیست راننده",
+        "route": "/api/v1/super-agent/driver",
+        "method": "GET"
+      },
+      {
+        "name": "حذف یک راننده",
+        "route": "/api/v1/super-agent/driver",
+        "method": "DELETE"
+      }
+    ],
+    "financial": [],
+    "block": []
+  },
+  "agent": {
+    "driver": [
+      {
+        "name": "ساخت یک راننده توسط آژانس",
+        "route": "/api/v1/agent/driver",
+        "method": "POST"
+      },
+      {
+        "name": "ارتقای کاربر به راننده توسط آژانس",
+        "route": "/api/v1/agent/driver",
+        "method": "PATCH"
+      },
+      {
+        "name": "بروزرسانی راننده‌ها",
+        "route": "/api/v1/agent/driver",
+        "method": "PUT"
+      },
+      {
+        "name": "ویرایش اطلاعات",
+        "route": "/api/v1/agent/driver",
+        "method": "PUT"
+      },
+      {
+        "name": "دریافت لیست راننده‌ها",
+        "route": "/api/v1/agent/driver",
+        "method": "GET"
+      }
+    ],
+    "financial": [],
+    "block": []
+  },
+  "AgentWDriver": []
+}

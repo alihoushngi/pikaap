@@ -1,0 +1,53 @@
+.role-menu {
+	margin-bottom: 1.5rem;
+	.item-row {
+		background-clip: padding-box;
+		border: 1px solid #323248;
+		padding: 0.825rem 1.5rem;
+		font-size: 1.15rem;
+		border-radius: 0.625rem;
+		background-color: #1e1e2d;
+		border-color: #1e1e2d;
+		color: #92929f;
+		-webkit-transition: color 0.2s ease, background-color 0.2s ease;
+		transition: color 0.2s ease, background-color 0.2s ease;
+		position: relative;
+	}
+	.subMenu {
+		display: flex !important;
+		align-items: center;
+		flex-direction: column !important;
+		span {
+			width: 100%;
+			background-clip: padding-box;
+			border: 1px solid #323248;
+			padding: 0.825rem;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-size: 1.15rem;
+			background-color: #1e1e2d;
+			border-color: #1e1e2d;
+			-webkit-transition: color 0.2s ease, background-color 0.2s ease;
+			transition: color 0.2s ease, background-color 0.2s ease;
+			text-decoration: none;
+			color: #92929f;
+			&:hover {
+				background-color: #323248;
+				border-color: #323248;
+			}
+			&:first-child {
+				border-radius: 0.625rem 0.625rem 0 0;
+			}
+			&:last-child {
+				border-radius: 0 0 0.625rem 0.625rem;
+			}
+		}
+	}
+}
+.deactivated-button {
+	display: flex;
+	align-items: center;
+	opacity: 0.7;
+	justify-content: center;
+	gap: 10px;
+}

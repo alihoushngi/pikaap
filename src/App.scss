@@ -1,0 +1,11 @@
+.shaba {
+	position: relative;
+	color: white;
+	z-index: 500000;
+	&::after {
+		position: absolute;
+		left: 2px;
+		top: 50%;
+		content: "IR";
+	}
+}
