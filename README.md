@@ -56,3 +56,21 @@ I was responsible for converting custom design specifications into a dynamic and
 
 _Coming soon..._
 
+---
+
+## 📜 License
+
+This project is proprietary and built specifically for Pikaap Transportation Company.
+Not licensed for redistribution or public use.
+
+---
+
+## 👨‍💻 About the Developer
+
+Hi! I’m Ali Hooshangi – a frontend developer passionate about building scalable, elegant, and high-performance web applications.
+
+This dashboard was one of my first major steps into React development, and it helped lay the foundation for the rest of my professional career.
+
+📧 Email: aliihooshangi@gmail.com
+🔗 LinkedIn: linkedin.com/in/alihoushngi
+💻 GitHub: github.com/alihoushngi
